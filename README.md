@@ -41,3 +41,7 @@ Sincere Greetings, it was a great experience working on this project. I always w
 In the streamlit app on the web input can be given for multiple input seperate them with commas. It will give the output below it along with CLI summary and download options for the .md and .json file
 Following are some example images
 ![1](examples/ss1.png)
+![2](examples/ss2.png)
+![3](examples/ss3.png)
+![4](examples/ss4.png)
+
