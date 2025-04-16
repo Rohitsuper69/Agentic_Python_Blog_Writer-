@@ -6,14 +6,13 @@
 
 Sincere Greetings, it was a great experience working on this project. I always wanted to create something like this now this opportunity to push beyond my limits and work on it. So, lets start.
 
-# Set up
+## Set up
 
 1. First clone this app from github by writing the following line on git bash
 
-```
-   git clone https://github.com/Rohitsuper69/Agentic_Python_Blog_Writer-
-
-```
+   ```
+      git clone https://github.com/Rohitsuper69/Agentic_Python_Blog_Writer-
+   ```
 2. Start with creating a virtual enviornment using python venv if not installed then
    ```
       pip install venv
@@ -38,17 +37,7 @@ Sincere Greetings, it was a great experience working on this project. I always w
       streamlit run streamlit.py
    ```
    
->>>>>>> 8000f87bcef36a05086298f3874a21874eedbe8b
-
-## Introduction
-
-Sincere Greetings, it was a great experience working on this project. I always wanted to create something like this now this opportunity to push beyond my limits and work on it. So, lets start.
-
-# Set up
-
-1. First clone this app from github by writing the following line on git bash
-
-```
-   git clone https://github.com/Rohitsuper69/Agentic_Python_Blog_Writer-
-
-```
+## Usage
+In the streamlit app on the web input can be given for multiple input seperate them with commas. It will give the output below it along with CLI summary and download options for the .md and .json file
+Following are some example images
+![1](examples/ss1.png)
