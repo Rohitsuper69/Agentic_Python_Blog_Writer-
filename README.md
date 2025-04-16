@@ -100,3 +100,8 @@ Once the app is running:
 | ![Screenshot 3](examples/ss3.png) | ![Screenshot 4](examples/ss4.png) |
 
 ---
+
+## Deploy
+
+The code is also deployed so can directly use it also
+[Link](https://rohitsuper69-agentic-python-blog-writer--streamlit-wutib5.streamlit.app/)
