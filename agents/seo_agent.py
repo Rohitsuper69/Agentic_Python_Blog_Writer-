@@ -3,11 +3,17 @@ import re
 import json
 import sys
 import os
+
+# Add parent directory to Python path for module imports
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from config import GEMINI_API_KEY
 
 class SEOAgent:
     def __init__(self, blog_content, topic, semantic_context):
+        """
+        Initialize the SEOAgent with blog content, topic, and semantic keyword context.
+        Also configures the Gemini model for use.
+        """
         self.blog_content = blog_content
         self.topic = topic
         self.semantic_keywords = semantic_context.get("keywords", [])
@@ -16,11 +22,17 @@ class SEOAgent:
         self.model = genai.GenerativeModel('gemini-2.0-flash')
 
     def analyze_content(self):
+        """
+        Generates SEO metadata from blog content using Gemini.
+        """
         prompt = self.build_prompt()
         response = self.model.generate_content(prompt)
         return self.extract_json(response.text)
 
     def build_prompt(self):
+        """
+        Builds the structured prompt that instructs Gemini to return SEO metadata in JSON format.
+        """
         enriched_keywords = "\n".join([
             f"- {', '.join(keyword_group)}"
             for keyword_group in self.semantic_keywords
@@ -50,6 +62,10 @@ Return the result in **JSON** format with:
 """
 
     def extract_json(self, response_text):
+        """
+        Extracts JSON from the model's response using regex.
+        Returns a structured metadata dictionary or an empty fallback if parsing fails.
+        """
         try:
             json_match = re.search(r"\{.*\}", response_text, re.DOTALL)
             if json_match:
@@ -57,6 +73,7 @@ Return the result in **JSON** format with:
         except Exception as e:
             print("⚠️ Error parsing SEO output:", e)
 
+        # Fallback structure in case parsing fails
         return {
             "title": "",
             "meta_description": "",
@@ -64,4 +81,3 @@ Return the result in **JSON** format with:
             "reading_time": "",
             "url_slug": ""
         }
-
