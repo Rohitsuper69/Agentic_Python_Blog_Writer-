@@ -64,8 +64,9 @@ Create a `.env` file in the root directory and add your API keys in the followin
 NEWSDATA_API_KEY=your_newsdata_api_key_here
 GEMINI_API_KEY=your_gemini_api_key_here
 ```
+
 since this code uses gemini-2.0-flash model generate key of that model as pro was not accessable
----
+
 
 ### 5. Launch the App
 
