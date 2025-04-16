@@ -60,8 +60,9 @@ if st.session_state["file_results"]:
         st.write(f"📊 **Flesch Reading Ease**: {flesch_reading_ease}")
 
         # Display markdown preview
-        st.markdown("### 📝 Blog Preview (Markdown)")
-        st.code(markdown_content, language="markdown")
+        st.markdown("### 📝 Blog Preview (Rendered Markdown)")
+        st.markdown(markdown_content, unsafe_allow_html=True)
+
 
         # Display JSON preview
         st.markdown("### 📄 SEO Metadata (JSON)")

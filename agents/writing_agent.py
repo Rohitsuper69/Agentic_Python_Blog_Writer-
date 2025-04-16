@@ -60,5 +60,6 @@ Generate a full blog post in **Markdown** on the topic: **{self.topic}**.
 - Use `##` for H2s, `###` for optional subsections
 - Use bullet points, bold, italics if appropriate
 - Keep the structure clean and readable
+- Also keep UX looking good
 """
         return prompt
