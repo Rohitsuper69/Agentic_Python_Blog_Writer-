@@ -5,7 +5,7 @@ import io
 import json
 
 # Streamlit UI
-st.title("Junior Blog Writer")
+st.title("Agentic Python Blog Writer ")
 st.write("Generate SEO-optimized blogs with the desired tone and readability scores.")
 
 # User Inputs
