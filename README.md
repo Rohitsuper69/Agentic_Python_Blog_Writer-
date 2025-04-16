@@ -1,54 +1,102 @@
-# Agentic_Python_Blog_Writer
-<<<<<<< HEAD
-=======
+# 🧠 Agentic Python Blog Writer
 
-## Introduction
+## 🚀 Introduction
 
-Sincere Greetings, it was a great experience working on this project. I always wanted to create something like this now this opportunity to push beyond my limits and work on it. So, lets start.
+Greetings!  
+Building this project has been an exciting journey. I’ve always aspired to create a tool like this—one that blends automation, research, and content generation seamlessly. This opportunity allowed me to push my limits and bring that vision to life. Let’s dive into the setup and usage guide!
 
-# Set up
+---
 
-1. First clone this app from github by writing the following line on git bash
+## ⚙️ Setup Instructions
 
+### 1. Clone the Repository
+
+Open your terminal and run:
+
+```bash
+git clone https://github.com/Rohitsuper69/Agentic_Python_Blog_Writer-
+cd Agentic_Python_Blog_Writer-
 ```
-   git clone https://github.com/Rohitsuper69/Agentic_Python_Blog_Writer-
 
+---
+
+### 2. Create a Virtual Environment
+
+Using Python’s `venv` module ensures isolated environments for dependencies.
+
+#### ✅ Windows:
+
+```bash
+python -m venv venv
+venv\Scripts\activate
 ```
-2. Start with creating a virtual enviornment using python venv if not installed then
-   ```
-      pip install venv
-   ```
-   then create a virtual enviornment to avoid any dependency conflict
-   ```
-      python -m venv venv
-   ```
-   now activate the enviornment
-   ```
-      venv/Scripts/activate
-   ```
-3. Now install requirements file
-   ```
-      pip install -r requirements.txt
-   ```
-4. Now create a .env file in main directory to provide with keys of Newsapi and geminiapi in following format
-   NEWSDATA_API_KEY={NEWSDATA_API_KEY}
-   GEMINI_API_KEY={GEMINI_API_KEY}
-5. Now execute the following command on the terminal
-   ```
-      streamlit run streamlit.py
-   ```
-   
->>>>>>> 8000f87bcef36a05086298f3874a21874eedbe8b
 
-## Introduction
+#### ✅ macOS / Linux:
 
-Sincere Greetings, it was a great experience working on this project. I always wanted to create something like this now this opportunity to push beyond my limits and work on it. So, lets start.
-
-# Set up
-
-1. First clone this app from github by writing the following line on git bash
-
+```bash
+python3 -m venv venv
+source venv/bin/activate
 ```
-   git clone https://github.com/Rohitsuper69/Agentic_Python_Blog_Writer-
 
+> If `venv` is not available, install it with:
+>
+> ```bash
+> pip install virtualenv
+> ```
+
+---
+
+### 3. Install Dependencies
+
+Install all required Python packages using the `requirements.txt` file:
+
+```bash
+pip install -r requirements.txt
 ```
+
+---
+
+### 4. Set Environment Variables
+
+Create a `.env` file in the root directory and add your API keys in the following format:
+
+```env
+NEWSDATA_API_KEY=your_newsdata_api_key_here
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+---
+
+### 5. Launch the App
+
+Start the Streamlit application by running:
+
+```bash
+streamlit run streamlit.py
+```
+
+---
+
+## 🧪 Usage Guide
+
+Once the app is running:
+
+- Enter multiple blog topics separated by commas (`,`).
+- Choose a desired **tone** from the dropdown.
+- Click **"Generate Blogs"**.
+- For each topic, the app will:
+  - Display the full blog content.
+  - Show SEO metadata.
+  - Provide download buttons for `.md` (Markdown) and `.json` files.
+  - Display readability metrics (Flesch-Kincaid Grade Level and Reading Ease).
+
+---
+
+## 📸 Example Screenshots
+
+| Web UI                            | Blog Output                       |
+| --------------------------------- | --------------------------------- |
+| ![Screenshot 1](examples/ss1.png) | ![Screenshot 2](examples/ss2.png) |
+| ![Screenshot 3](examples/ss3.png) | ![Screenshot 4](examples/ss4.png) |
+
+---
